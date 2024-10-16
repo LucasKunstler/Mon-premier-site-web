@@ -1,35 +1,131 @@
-h1{
-    color: blanchedalmond;
-    background-color: black; 
-    text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 3em;
-    padding: 10px;
-    margin-bottom: 10px;
-    margin-top: 10px;
+/* Palette de couleur : https://coolors.co/2d2d2a-4c4c47-848fa5-c14953-e5dcc5 */
+
+/* Jet #2D2D2A
+Davy's Gray #4C4C47
+Cool Gray #848FA5
+Bittersweet shimmer #C14953
+Pearl #E5DCC5 */
+
+header{
+    background-color: #2D2D2A ;
+    color: #E5DCC5 ;
+    font-family: "Montserrat", sans-serif;
 }
 
-img{
+body{
+     font-family: "Montserrat", sans-serif; 
+    margin: 0;
+}
+
+.actuel{
+    font-size: larger;
+    color: #C14953;
+}
+
+nav{
     display: flex;
-    width: 25%;
-    margin: 10px;
-    
+    padding: 20px;
+    justify-content: space-evenly;
 }
 
-
-
-p{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+nav a {
+    color: #E5DCC5;
+    text-decoration: none;
 }
 
-#chapeau{
+nav a:hover{
+    color: #C14953;
     font-size: larger;
 }
 
-.verte{
-    color: green;
+.Centrage{
+    display: flex;
+    flex-direction: column;
 }
 
-.rouge{
-    color: red;
+
+ul{
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    text-align: center;
+    font-size: 3em;
+    padding: 10px;
+}
+
+img{
+    display: block;
+    width: 25%;
+    margin: auto;
+}
+
+.couleur1{
+    background-color: #4C4C47 ;
+    color: #E5DCC5;
+    
+}
+
+.couleur2{
+    background-color: #848FA5 ;
+    color: #4C4C47 ;
+}
+
+.couleur3{
+    background-color: #4C4C47 ;
+    color: #E5DCC5;
+}
+
+section{
+    margin: 0;
+    padding: 0;
+}
+
+.link{
+    text-decoration: none;
+    color: #E5DCC5;
+}
+
+p{
+    margin: 0;
+    padding: 20px;
+}
+
+footer{
+    color: #E5DCC5;
+    text-align: center;
+    background-color: #2D2D2A;
+}
+
+.contenair{
+    display: flex;
+    background-color:#565554;
+}
+
+.item1 , .item2 , .item3 , .item4{
+    width: 25%;
+}
+
+.item1{
+    text-align: center;
+    background-color: #565554;
+}
+
+.item2{
+    text-align: center;
+    background-color:#848FA5;
+}
+
+.item3{
+    text-align: center;
+    background-color:#565554;
+}
+
+.item4{
+    text-align: center;
+    background-color:#848FA5;
 }
