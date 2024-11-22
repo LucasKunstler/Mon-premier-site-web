@@ -1,4 +1,4 @@
-body {
+/* body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
@@ -10,7 +10,7 @@ header {
     color: white;
     padding: 10px 0;
     text-align: center;
-}
+} */
 .concerts {
     display: flex;
     flex-wrap: wrap;
