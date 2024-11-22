@@ -1,14 +1,55 @@
-h1{
-    color: blanchedalmond;
-    background-color: black; 
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
     text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 3em;
-    padding: 10px;
-    margin-bottom: 10px;
-    margin-top: 10px;
+}
+.concerts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    background-color: #565554;
+}
+.concert {
+    background-color: #848fa5;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+.concert h2 {
+    color: #E5DCC5;
+}
+.concert p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+.concert .date {
+    font-weight: bold;
+    color: black;
 }
 
-h3{
-    text-align: center;
+.button {
+    background-color: #565554;
+    color: #E5DCC5;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+.button:hover {
+    background-color: #565554;
 }

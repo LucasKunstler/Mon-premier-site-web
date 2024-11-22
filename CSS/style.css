@@ -58,6 +58,13 @@ h1{
     padding: 10px;
 }
 
+h2{
+    text-align: center;
+    color: #E5DCC5;
+    background-color: #4C4C47;
+    margin: 0;
+}
+
 img{
     display: block;
     width: 25%;
@@ -129,3 +136,14 @@ footer{
     text-align: center;
     background-color:#848FA5;
 }
+
+.concert1{
+    display: flex;
+    background-color: #848FA5;
+    margin: 0;
+}
+
+h3{
+    margin: 0;
+}
+
