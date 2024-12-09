@@ -17,6 +17,12 @@ body{
     margin: 0;
 }
 
+#nom{
+    font-size: 35px
+    ;
+
+}
+
 .actuel{
     font-size: larger;
     color: #C14953;
@@ -112,39 +118,35 @@ footer{
 .contenair{
     display: flex;
     background-color:#565554;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   
 }
 
-.item1 , .item2 , .item3 , .item4{
-    width: 25%;
+.item1, .item2, .item3, .item4{
+    width: 25%; /* Default: 4 columns on large screens */
 }
 
-.item1{
+.item1 , .item3{
     text-align: center;
     background-color: #565554;
 }
 
-.item2{
-    text-align: center;
-    background-color:#848FA5;
-}
-
-.item3{
-    text-align: center;
-    background-color:#565554;
-}
-
-.item4{
+.item2 , .item4{
     text-align: center;
     background-color:#848FA5;
 }
 
 .concerts {
+    width: 100%;
+    height: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 20px;
+    /* padding: 20px; */
     background-color: #565554;
 }
+
 .concert {
     background-color: #848fa5;
     margin: 10px;
@@ -178,7 +180,58 @@ footer{
     margin-top: 10px;
 }
 .button:hover {
-    background-color: #565554;
+    background-color: #E5DCC5;
+    color: #565554;
+}
+
+
+@media (max-width: 1024px) {
+    h1{
+        font-size: 2.5em; /* Adjust header size for medium screens */
+    }
+
+
+    .item1, .item2, .item3, .item4{
+        width: 50%; /* 2 columns on medium screens */
+    }
+}
+
+/* Small Screens (Mobile Phones) */
+@media (max-width: 768px) {
+    h1{
+        font-size: 2em; /* Smaller font size for mobile */
+    }
+
+    nav{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item1, .item2, .item3, .item4{
+        width: 100%; /* Full width for small screens */
+    }
+
+    .concert {
+        width: 100%; /* Full width for concert items on small screens */
+    }
+
+    .button{
+        width: 100%; /* Button takes full width */
+    }
+}
+
+@media (max-width: 480px) {
+    h1{
+        font-size: 1.5em; /* Smaller header size for very small screens */
+    }
+
+    .concert p{
+        font-size: 1em; /* Adjust paragraph size for small mobile screens */
+    }
+
+    .concert .date{
+        font-size: 1em; /* Adjust date font size */
+    }
 }
 
 
