@@ -204,8 +204,7 @@ footer{
 .button {
     background-color: #565554;
     color: #E5DCC5;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -276,8 +275,9 @@ footer{
     }
 
     .button{
-        width: 100%; /* Button takes full width */
+        width: 90%; /* Button takes full width */
     }
+
 }
 
 @media (max-width: 480px) {
