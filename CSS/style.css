@@ -157,7 +157,7 @@ footer{
 }
 
 .item1, .item2, .item3, .item4{
-    width: 25%; /* Default: 4 columns on large screens */
+    width: 25%; /* Se modifie en mettant 4 colonnes max */
 }
 
 .item1 , .item3{
@@ -176,7 +176,6 @@ footer{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    /* padding: 20px; */
     background-color: #565554;
 }
 
@@ -220,45 +219,37 @@ footer{
 
 @media (max-width: 1024px) {
     h1{
-        font-size: 2.5em; /* Adjust header size for medium screens */
+        font-size: 2.5em;
     }
 
 
     .item1, .item2, .item3, .item4{
-        width: 50%; /* 2 columns on medium screens */
+        width: 50%; /* Se modifie en 2 colonnes max*/
     }
 }
 
-/* Small Screens (Mobile Phones) */
 @media (max-width: 768px) {
     h1{
-        font-size: 2em; /* Smaller font size for mobile */
+        font-size: 2em; 
     }
-
-    /* nav{
-        flex-direction: column;
-        align-items: center;
-    } */
-
 
     #menu {
         height:auto;
-        /* Pour annuler la hauteur forcée que l'on a donné par défaut au menu (et lui permettre d'afficher toutes les rubriques correctement) */
-        align-items: flex-start; /* Plus besoin de centrage vertical, tout peut être calé en haut du menu */
+        align-items: flex-start;  
     }
 
     #menu ul {
-        display:none; /* Le contenu du menu est masqué par défaut... */
-        flex-direction: column; /* ...et lorsqu'il sera affiché, il doit se présenter verticalement */
-        margin:20px 0px; /* 2 valeurs : top & bottom puis left & right */
+        display:none; 
+        flex-direction: column; 
+        margin:20px 0px; 
     }
 
     #menu.visible ul {
-        display:flex; /* Pour annuler display:none donc le masquage */
+        display:flex; 
     }
 
     #menu button {
-        display:block; /* Pour annuler display:none donc le masquage */
+        display:block; 
     }
 
     #menu.visible button {
@@ -267,30 +258,30 @@ footer{
 
 
     .item1, .item2, .item3, .item4{
-        width: 100%; /* Full width for small screens */
+        width: 100%; 
     }
 
     .concert {
-        width: 100%; /* Full width for concert items on small screens */
+        width: 100%;
     }
 
     .button{
-        width: 90%; /* Button takes full width */
+        width: 90%; 
     }
 
 }
 
 @media (max-width: 480px) {
     h1{
-        font-size: 1.5em; /* Smaller header size for very small screens */
+        font-size: 1.5em; 
     }
 
     .concert p{
-        font-size: 1em; /* Adjust paragraph size for small mobile screens */
+        font-size: 1em; 
     }
 
     .concert .date{
-        font-size: 1em; /* Adjust date font size */
+        font-size: 1em; 
     }
 }
 
