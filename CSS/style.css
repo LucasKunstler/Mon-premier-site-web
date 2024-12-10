@@ -23,39 +23,72 @@ body{
 
 }
 
-.actuel{
-    font-size: larger;
+#menu {
+    background-color: #2D2D2A;
+      height:70px;
+      display:flex;
+      align-items:center;
+  }
+  
+  #menu ul {
+      display:flex;
+      justify-content:center;
+      width:100%;
+      margin:0;
+      padding:0;
+      list-style: none;
+      gap:40px;
+      font-size:22px;
+  }
+  
+  #menu a {
+      color:#E5DCC5;
+      text-decoration:none;
+  }
+
+  #menu a:hover{
     color: #C14953;
-}
-
-nav{
-    display: flex;
-    padding: 20px;
-    justify-content: space-evenly;
-}
-
-nav a {
-    color: #E5DCC5;
-    text-decoration: none;
-}
-
-nav a:hover{
-    color: #C14953;
     font-size: larger;
+  }
+  
+  /* Bouton "burger" */
+  #menu button {
+      width:100px;
+      flex-shrink:0;
+      background-color:transparent;
+      border:none;
+      display: none;
+    /* Masqué par défaut, n'apparaît que sous le seuil des 900px */
+      transition:margin-top 0.5s;
+  }
+  
+   #menu button img {
+      width:75%;
+  } 
+
+  .parallax {
+    background-image: url(../image/Festival_des_Vieilles_Charrues_2022_-_SCH_-_038_\(cropped\).jpg);
+    height: 600px;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax2 {
+    background-image: url(../image/Sch.jpg);
+    height: 600px;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .Centrage{
     display: flex;
     flex-direction: column;
-}
-
-
-ul{
-    list-style-type: none;
-    display: flex;
-    gap: 30px;
-    margin: 0;
-    padding: 0;
 }
 
 h1{
@@ -72,11 +105,11 @@ h2{
     margin: 0;
 }
 
-img{
+ img{
     display: block;
     width: 25%;
     margin: auto;
-}
+} 
 
 .couleur1{
     background-color: #4C4C47 ;
@@ -202,10 +235,36 @@ footer{
         font-size: 2em; /* Smaller font size for mobile */
     }
 
-    nav{
+    /* nav{
         flex-direction: column;
         align-items: center;
+    } */
+
+
+    #menu {
+        height:auto;
+        /* Pour annuler la hauteur forcée que l'on a donné par défaut au menu (et lui permettre d'afficher toutes les rubriques correctement) */
+        align-items: flex-start; /* Plus besoin de centrage vertical, tout peut être calé en haut du menu */
     }
+
+    #menu ul {
+        display:none; /* Le contenu du menu est masqué par défaut... */
+        flex-direction: column; /* ...et lorsqu'il sera affiché, il doit se présenter verticalement */
+        margin:20px 0px; /* 2 valeurs : top & bottom puis left & right */
+    }
+
+    #menu.visible ul {
+        display:flex; /* Pour annuler display:none donc le masquage */
+    }
+
+    #menu button {
+        display:block; /* Pour annuler display:none donc le masquage */
+    }
+
+    #menu.visible button {
+        margin-top:15px;
+    }
+
 
     .item1, .item2, .item3, .item4{
         width: 100%; /* Full width for small screens */
